@@ -17,15 +17,16 @@ generation:
     securityFeb2025: true
     sharedErrorComponentsApr2025: true
   auth:
-    oAuth2ClientCredentialsEnabled: true
-    oAuth2PasswordEnabled: true
+    oAuth2ClientCredentialsEnabled: false
+    oAuth2PasswordEnabled: false
+    hoistGlobalSecurity: true
   sdkHooksConfigAccess: true
   tests:
     generateTests: false
     generateNewTests: true
     skipResponseBodyAssertions: false
 typescript:
-  version: 0.1.3
+  version: 0.1.4
   additionalDependencies:
     dependencies: {}
     devDependencies: {}
@@ -56,9 +57,12 @@ typescript:
   jsonpath: rfc9535
   maxMethodParams: 0
   methodArguments: infer-optional-args
+  modelPropertyCasing: camel
   moduleFormat: dual
   outputModelSuffix: output
   packageName: rails
   responseFormat: flat
+  sseFlatResponse: false
   templateVersion: v2
+  usageSDKInitImports: []
   useIndexModules: true
