@@ -5,5 +5,6 @@
 export * from "./error.js";
 export * from "./httpclienterrors.js";
 export * from "./railsdefaulterror.js";
+export * from "./railserror.js";
 export * from "./responsevalidationerror.js";
 export * from "./sdkvalidationerror.js";

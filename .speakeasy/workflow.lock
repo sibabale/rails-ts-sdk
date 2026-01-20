@@ -1,4 +1,4 @@
-speakeasyVersion: 1.583.0
+speakeasyVersion: 1.685.0
 sources:
     Rails PoC API:
         sourceNamespace: rails-po-c-api
@@ -10,30 +10,26 @@ sources:
             - 1.0.0
 targets:
     rails:
-        source: Rails PoC API
-        sourceNamespace: rails-po-c-api
-        sourceRevisionDigest: sha256:8c54501653a4cdcbcc3227d71a07702c5e2bc6920e7e9501ee0fb35b80ddfcb8
-        sourceBlobDigest: sha256:0c0302d51dc934e0d4cb2ff21fc0c343a4646bdf26b9662342f1158d718a3332
-        codeSamplesNamespace: rails-po-c-api-typescript-code-samples
-        codeSamplesRevisionDigest: sha256:c22adae1a0507a1c9cb2bd597cb4191a1a957221f4f9fc25e776a6483582b7ec
+        source: Rails Founder API
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
     sources:
-        Rails PoC API:
+        Rails Founder API:
             inputs:
-                - location: https://raw.githubusercontent.com/sibabale/rails/main/poc/api/openapi.yaml
-            overlays:
-                - location: .speakeasy\speakeasy-modifications-overlay.yaml
+                - location: ./openapi-founder.yaml
             registry:
-                location: registry.speakeasyapi.dev/rails/poc/rails-po-c-api
+                location: registry.speakeasyapi.dev/rails/founder/rails-founder-api
     targets:
         rails:
             target: typescript
-            source: Rails PoC API
+            source: Rails Founder API
+            publish:
+                npm:
+                    token: $npm_token
             codeSamples:
                 registry:
-                    location: registry.speakeasyapi.dev/rails/poc/rails-po-c-api-typescript-code-samples
+                    location: registry.speakeasyapi.dev/rails/founder/rails-founder-api-typescript-code-samples
                 labelOverride:
                     fixedValue: Typescript (SDK)
                 blocking: false

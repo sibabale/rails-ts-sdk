@@ -1,120 +1,611 @@
 lockVersion: 2.0.0
 id: 668cd2a0-9bdd-4ce9-a979-88915807f9e6
 management:
-  docChecksum: a7606685f77764cc91cd81a65304674b
-  docVersion: 1.0.0
-  speakeasyVersion: 1.583.0
-  generationVersion: 2.658.3
-  releaseVersion: 0.1.3
-  configChecksum: b05ebe29d34327c49c0d5f3dc2b7b9bb
+  docChecksum: b753e2631d341070f6d71f426f178b3b
+  docVersion: 0.1.0
+  speakeasyVersion: 1.685.0
+  generationVersion: 2.794.1
+  releaseVersion: 0.2.1
+  configChecksum: e655e005ea6c5432143683558b741529
   repoURL: https://github.com/sibabale/rails-typescript.git
   installationURL: https://github.com/sibabale/rails-typescript
+  published: true
+persistentEdits:
+  generation_id: 55a38391-0fdf-405f-9a1b-667823d25812
+  pristine_commit_hash: 8668d4a03a2caa699dd866c2b3dfc5b05a9555d1
+  pristine_tree_hash: be552e027c53c80a01a13504b5a6d079dfcb190f
 features:
   typescript:
     additionalDependencies: 0.1.0
     constsAndDefaults: 0.1.12
-    core: 3.21.14
+    core: 3.26.20
     defaultEnabledRetries: 0.1.0
-    devContainers: 2.90.0
+    devContainers: 2.90.1
+    enumUnions: 0.1.0
     envVarSecurityUsage: 0.1.2
+    flattening: 2.82.1
+    globalSecurity: 2.82.14
     globalSecurityCallbacks: 0.1.0
-    globalServerURLs: 2.82.5
+    globalSecurityFlattening: 0.1.0
+    globalServerURLs: 2.83.0
     methodArguments: 0.1.2
+    nullables: 0.1.1
     responseFormat: 0.2.3
     retries: 2.83.0
-    sdkHooks: 0.3.0
-generatedFiles:
-  - .devcontainer/README.md
-  - .devcontainer/devcontainer.json
-  - .devcontainer/setup.sh
-  - .gitattributes
-  - .npmignore
-  - FUNCTIONS.md
-  - RUNTIMES.md
-  - USAGE.md
-  - docs/lib/utils/retryconfig.md
-  - docs/models/errors/errort.md
-  - docs/models/operations/activebankslist.md
-  - docs/models/operations/bankdistribution.md
-  - docs/models/operations/getdashboardmetricsresponse.md
-  - docs/models/operations/gethealthresponse.md
-  - docs/models/operations/getledgerpendingresponse.md
-  - docs/models/operations/gettransactionsrequest.md
-  - docs/models/operations/gettransactionsresponse.md
-  - docs/models/operations/mondayclearingpreparation.md
-  - docs/models/operations/pagination.md
-  - docs/models/operations/postledgersettleresponse.md
-  - docs/models/operations/postsimulatorstartrequest.md
-  - docs/models/operations/postsimulatorstartresponse.md
-  - docs/models/operations/postwebhookresponse.md
-  - docs/models/operations/settlementoverview.md
-  - docs/models/operations/transactionlog.md
-  - docs/models/transaction.md
-  - docs/sdks/rails/README.md
-  - eslint.config.mjs
-  - examples/.env.template
-  - examples/README.md
-  - examples/package.json
-  - examples/postLedgerSettle.example.ts
-  - jsr.json
-  - package.json
-  - src/core.ts
-  - src/funcs/getDashboardMetrics.ts
-  - src/funcs/getHealth.ts
-  - src/funcs/getLedgerPending.ts
-  - src/funcs/getTransactions.ts
-  - src/funcs/postLedgerSettle.ts
-  - src/funcs/postSimulatorStart.ts
-  - src/funcs/postWebhook.ts
-  - src/hooks/hooks.ts
-  - src/hooks/index.ts
-  - src/hooks/types.ts
-  - src/index.ts
-  - src/lib/base64.ts
-  - src/lib/config.ts
-  - src/lib/dlv.ts
-  - src/lib/encodings.ts
-  - src/lib/env.ts
-  - src/lib/files.ts
-  - src/lib/http.ts
-  - src/lib/is-plain-object.ts
-  - src/lib/logger.ts
-  - src/lib/matchers.ts
-  - src/lib/primitives.ts
-  - src/lib/retries.ts
-  - src/lib/schemas.ts
-  - src/lib/sdks.ts
-  - src/lib/security.ts
-  - src/lib/url.ts
-  - src/models/errors/error.ts
-  - src/models/errors/httpclienterrors.ts
-  - src/models/errors/index.ts
-  - src/models/errors/railsdefaulterror.ts
-  - src/models/errors/railserror.ts
-  - src/models/errors/responsevalidationerror.ts
-  - src/models/errors/sdkvalidationerror.ts
-  - src/models/index.ts
-  - src/models/operations/getdashboardmetrics.ts
-  - src/models/operations/gethealth.ts
-  - src/models/operations/getledgerpending.ts
-  - src/models/operations/gettransactions.ts
-  - src/models/operations/index.ts
-  - src/models/operations/postledgersettle.ts
-  - src/models/operations/postsimulatorstart.ts
-  - src/models/operations/postwebhook.ts
-  - src/models/transaction.ts
-  - src/sdk/index.ts
-  - src/sdk/sdk.ts
-  - src/types/async.ts
-  - src/types/blobs.ts
-  - src/types/constdatetime.ts
-  - src/types/enums.ts
-  - src/types/fp.ts
-  - src/types/index.ts
-  - src/types/operations.ts
-  - src/types/rfcdate.ts
-  - src/types/streams.ts
-  - tsconfig.json
+    sdkHooks: 0.4.0
+trackedFiles:
+  .devcontainer/README.md:
+    id: b170c0f184ac
+    last_write_checksum: sha1:bc93ceb72b881aeb832b3e903d398a4077d0b0ca
+    pristine_git_object: b4b5f4e539ff0ef9ea23598853b8598fa5a5b9de
+  .devcontainer/devcontainer.json:
+    id: b34062a34eb1
+    last_write_checksum: sha1:d0b15193202c961e7d1875864ddb15f9d17c84dd
+    pristine_git_object: 4d560dd5f40afaf10d96eb75b1f02cd48bbd640c
+  .devcontainer/setup.sh:
+    id: 5f1dfbfeb8eb
+    last_write_checksum: sha1:8873d4bf7b85dd072c2d046d6c44c4b15ee6149b
+    pristine_git_object: 2ec895bc93d76e7165af0a4297e6cce7ead2704d
+  .gitattributes:
+    id: 24139dae6567
+    last_write_checksum: sha1:26d16d8297b104945139da8c25bd38feeaad3e25
+    pristine_git_object: 113eead5093c17d43a46159132885318f281a68a
+  .npmignore:
+    id: aa70c1f807c3
+    last_write_checksum: sha1:3d5eb92f81539175db1ff0280e0aefbdd701f200
+    pristine_git_object: cf98a6bf092538eb10ff0edc915102682ce9a6e6
+  FUNCTIONS.md:
+    id: 21b9df02aaeb
+    last_write_checksum: sha1:13c941a577a7346e5e77f08d69cbdf829f047002
+    pristine_git_object: 830eb6a3070ad2b8be597a2ae3fe9e72a6308311
+  RUNTIMES.md:
+    id: 620c490847b6
+    last_write_checksum: sha1:e45b854f02c357cbcfdb8c3663000e8339e16505
+    pristine_git_object: 27731c3b5ace66bedc454ed5acbe15075aacd3dc
+  USAGE.md:
+    id: 3aed33ce6e6f
+    last_write_checksum: sha1:ba61dbfdbc90ecfdd6adf75a4f735acfd249336d
+    pristine_git_object: 4cfbf00d8e17c5fbb3dab43a6946d782ca070e10
+  docs/lib/utils/retryconfig.md:
+    id: 0ce9707cb848
+    last_write_checksum: sha1:bc4454e196fcd219f5a78da690375a884f5ed07b
+    pristine_git_object: 08f95f4552349360b2c0b01802aa71ec3a55d2c2
+  docs/models/account.md:
+    id: f7d1e7e7409d
+    last_write_checksum: sha1:2631101481907bc9b403d03a5201117250b62218
+    pristine_git_object: 5bcf1969b405496d9610c177ed3ba35bc78a07b5
+  docs/models/accountstatus.md:
+    id: 0f8878e04cae
+    last_write_checksum: sha1:bb2a1b3a8a6519aaee8bbba81bdaed05faca498f
+    pristine_git_object: 95d944fe2a765bb1db20ef03194125e2a7afb0f9
+  docs/models/accounttransactionresult.md:
+    id: 8b1b9a35ccba
+    last_write_checksum: sha1:8eea3873b6097134613cf562a1bb2a2b8cf61deb
+    pristine_git_object: 16ec7e05b635e59d53a37e704a5bf21284fa9287
+  docs/models/accounttype.md:
+    id: 3e5f862a6af7
+    last_write_checksum: sha1:be477e75837e07811e1fb96fa13e5e04e614a1d3
+    pristine_git_object: 91b86bb0c2cb019186e49d4a75337578b6cee5e0
+  docs/models/createaccountrequest.md:
+    id: 7ee5c335751e
+    last_write_checksum: sha1:dd83216b0b9fe3dd3f769bcd173328ce8c43ab07
+    pristine_git_object: b852a33e62d22e293e6db123a21091740745a65c
+  docs/models/createuserrequest.md:
+    id: 019e83308ac7
+    last_write_checksum: sha1:c559a4bd6922724204e68546d83389cfccea2fed
+    pristine_git_object: 9f2cfb4a795950309be6d04a489af742cf2eb404
+  docs/models/createuserresponse.md:
+    id: 2c63ed11dd71
+    last_write_checksum: sha1:016e74405c656ece69984c91b6ae6265a4c1f764
+    pristine_git_object: b73b373e955eeb5d228ecf7f8c36cbb5c4d10589
+  docs/models/depositrequest.md:
+    id: 6dfaec6f38a8
+    last_write_checksum: sha1:f682a564ac551f45ecb88bdf781f91d71408d593
+    pristine_git_object: 24b2a239e76a176892fada3dea972e7dcbd921b7
+  docs/models/errors/errort.md:
+    id: 0fc20860e35e
+    last_write_checksum: sha1:7154741cb7a78658c46057024a58f65cd8d8ca84
+    pristine_git_object: 6ff1cfb4477643dd18a6a15902487135f2934c2e
+  docs/models/operations/accountscloserequest.md:
+    id: 35a2ad8be0a4
+    last_write_checksum: sha1:8a22a398017a8bf9bb692cca80e8b831b41bddf5
+    pristine_git_object: 7e02d32a2a48aa97481507e28a1cd00e28897723
+  docs/models/operations/accountscloseresponse.md:
+    id: dd6f7f4ebf8b
+    last_write_checksum: sha1:90a4883b006af45ea23ab2400c41e2388e680159
+    pristine_git_object: f07001b67a66eae19ad0164a9d5b67d5a6ffe0a1
+  docs/models/operations/accountscreateresponse.md:
+    id: 30e8159393a6
+    last_write_checksum: sha1:2a45a6b8edba6978c33ef1e958df4e1455b795ae
+    pristine_git_object: 7ca1ed4389070da2e78479c92cdb09651fb26125
+  docs/models/operations/accountsdepositrequest.md:
+    id: f9fa12b76ada
+    last_write_checksum: sha1:38f999d58c36ef8db49c9a8d023596391a4e1738
+    pristine_git_object: dca84db81492e92f6ee6a0b889909cf3710386d2
+  docs/models/operations/accountsdepositresponse.md:
+    id: 608ea5c1d15e
+    last_write_checksum: sha1:4330cf4392b360fb81a6d13067c90fe90e9b9e7c
+    pristine_git_object: 69d9aeeba501ac06dbf4a428cb75403832039976
+  docs/models/operations/accountslistrequest.md:
+    id: 437ead069276
+    last_write_checksum: sha1:b31b448216fa6417b8b0e3013d222f3753fc11c0
+    pristine_git_object: 6b6864a79baed5ae6318b8fc31c3210f8ccba470
+  docs/models/operations/accountslistresponse.md:
+    id: 36bd841aa509
+    last_write_checksum: sha1:1bcf02c6719ab801fec43062bdc1997c30250639
+    pristine_git_object: c1f06ee4f1c834199c10837d86c1b0369ba65696
+  docs/models/operations/accountsretrieverequest.md:
+    id: a427b91c769d
+    last_write_checksum: sha1:52aef565ad9ea07114b5803cf6c488f919fa88a8
+    pristine_git_object: 5988afe2fe94d6b19cc2fbf30143e8502ccc002b
+  docs/models/operations/accountsretrieveresponse.md:
+    id: db9acec07f77
+    last_write_checksum: sha1:63e4f499c6e9a83235766614fa4c07c0e0ebfed7
+    pristine_git_object: 251a7f4cdb7da71cce0edb4ed636eb4181d864e9
+  docs/models/operations/accountstransferrequest.md:
+    id: eef3e003ad76
+    last_write_checksum: sha1:eb152446a22bfcb443442af0b4189f9084d16776
+    pristine_git_object: a19bb909849fe1ea32cdcdb8e5093b017540c50b
+  docs/models/operations/accountstransferresponse.md:
+    id: b3600e6c8774
+    last_write_checksum: sha1:343bd8e54e8b4c634e64cd6c6a31a4c9339297f4
+    pristine_git_object: 42db8edaea6ae5e21491573c0720c5fddd071e8b
+  docs/models/operations/accountsupdatestatusrequest.md:
+    id: 2b9dc18f9fad
+    last_write_checksum: sha1:5ec034509b7f6e32930befc92a254c745ec87f9a
+    pristine_git_object: ff2680ae2be288dd9fa4c29d7fd510d387226f44
+  docs/models/operations/accountsupdatestatusresponse.md:
+    id: fa2ef38e5bb8
+    last_write_checksum: sha1:72789382036b8c9b8e17f22174dd5812e1d8554d
+    pristine_git_object: d39fdfe24373a684b4c6ea471638a89d6a15c434
+  docs/models/operations/accountswithdrawrequest.md:
+    id: 59cd0316ac76
+    last_write_checksum: sha1:cc9452312d6de878cd7335c3519d305e9a7552b7
+    pristine_git_object: e771bb3aaa322bf52547082d9de0ec3c4522bbce
+  docs/models/operations/accountswithdrawresponse.md:
+    id: 1714d6093858
+    last_write_checksum: sha1:f8158dafdf4cd3a7201e19d97291381321e8e5fc
+    pristine_git_object: 98e098bdd9178071de14d8efd375fbd4c2659dfb
+  docs/models/operations/transactionslistbyaccountrequest.md:
+    id: 649afe66be30
+    last_write_checksum: sha1:faa9189cb6435960b58c1a73c26ebfe47bc7bfff
+    pristine_git_object: 062fd672cd012409c8ab67c2885a2a30f64bd7da
+  docs/models/operations/transactionslistbyaccountresponse.md:
+    id: 6603c164eae5
+    last_write_checksum: sha1:740f2a3e7dc1d3ec26d0aacafbdde7dab64d2082
+    pristine_git_object: 412038c42c6f5c150c2f820902913b1b705fcf96
+  docs/models/operations/transactionsretrieverequest.md:
+    id: 955011c45b59
+    last_write_checksum: sha1:e5aa6827f081cec68151ef01677fd7c831192882
+    pristine_git_object: 218cc1692f0e86e7b6404720707dcfe1d3437919
+  docs/models/operations/transactionsretrieveresponse.md:
+    id: 37beae0c5181
+    last_write_checksum: sha1:22133b4c05f2a1572c5ff60b9a92005f99ebae22
+    pristine_git_object: 8bf5ccc0914d5f2d7957c759120ee9130b4bcc9b
+  docs/models/operations/userscreaterequest.md:
+    id: 5feb1fb66c2b
+    last_write_checksum: sha1:d0dd618d2b617d55d2133d8d49a40c0c035896f3
+    pristine_git_object: 9a74252d73defc7834516a1ccf53be538fee01f8
+  docs/models/operations/userscreateresponse.md:
+    id: 69d1de8ce23c
+    last_write_checksum: sha1:b7776d8100bf2ae6c0321b09e9289511b747e010
+    pristine_git_object: 2e39a8ed2b03583c0405a1424e117db1e52ca0af
+  docs/models/security.md:
+    id: 452e4d4eb67a
+    last_write_checksum: sha1:0a0aec3bd48dc1d3527fec3cbdf371dc06884023
+    pristine_git_object: c61d5032458385a525d2eea0a37b2acb7a3cfe56
+  docs/models/transaction.md:
+    id: 24ab0958a449
+    last_write_checksum: sha1:3f4e15c94c7ca88ea168d55c5527a88202ebf5a3
+    pristine_git_object: 90ed49e77c21b72dd2eb0c28c73cf1880c9bc9ec
+  docs/models/transactionstatus.md:
+    id: 8331a2267dc3
+    last_write_checksum: sha1:4c8086911fc053afe6f6ba7c4baabf1e6462309b
+    pristine_git_object: 7bf096754bbe8e13db770efa24b39e4c9a657337
+  docs/models/transactiontype.md:
+    id: 1efa7d59dbe4
+    last_write_checksum: sha1:6f4704fb3a22354a5954eb0633dd32431ad17850
+    pristine_git_object: d895fc81a84bf2a8ac3d76b7d44f443efffe16e4
+  docs/models/transferrequest.md:
+    id: 7b787aac96bf
+    last_write_checksum: sha1:c3f1bd311512be2c72ad20722f11e500a52de934
+    pristine_git_object: 65e286e1c2b8f79b6610dfe1e4ca91ca2216eabc
+  docs/models/transferresult.md:
+    id: 9eac63538fd1
+    last_write_checksum: sha1:c05f9328fb560799f4c92b4efa4f26479a70d11b
+    pristine_git_object: 71b04ad348189968954d2540fd1f3dcc97bdaff3
+  docs/models/updateaccountrequest.md:
+    id: 6a35b996f623
+    last_write_checksum: sha1:ec22484f29085460ae5fe75cd8e62dfce91b4151
+    pristine_git_object: 5f15861da7d71c9dfde898b98e0daf4e2fde8a0f
+  docs/models/withdrawrequest.md:
+    id: 905f6b5c0e85
+    last_write_checksum: sha1:f95e337bfe999213fd1137b40a464ff4b48c87ba
+    pristine_git_object: 81ac2193a84f8cf8f8513e1f161c3bb4a5ecf46d
+  docs/models/xenvironment.md:
+    id: 8644a8dde70e
+    last_write_checksum: sha1:12841d5211bb022a0abe02590224c8ad6c4349ed
+    pristine_git_object: b2e1a348bbdc20ae156e54b8160c3d137f21f2e3
+  docs/sdks/accounts/README.md:
+    id: d6c754b1ca96
+    last_write_checksum: sha1:113f1d3757796a9a5590b81193bd576417b5a736
+    pristine_git_object: c607443964bf5fee65e00d82c00fd4cf58f71e51
+  docs/sdks/transactions/README.md:
+    id: 85592abe3c6b
+    last_write_checksum: sha1:04dd710b00998129dcb42449cc2dc9801a5a08ce
+    pristine_git_object: 67eaebbe20cd3c9bd6f4ef139aa774ca55eea6a0
+  docs/sdks/users/README.md:
+    id: 5d80027045fe
+    last_write_checksum: sha1:e3487ccd6847ae9bb057683c41d4b487d1135582
+    pristine_git_object: b638626e52c94241163f2d4cec0e639d2ffb8317
+  eslint.config.mjs:
+    id: 461c8d07f6da
+    last_write_checksum: sha1:9398f326377fe47f67af2df6eb6370750c0790b4
+    pristine_git_object: 67bccfec985be20a00970d90155752832dd47135
+  examples/.env.template:
+    id: 52cbe5afed92
+    last_write_checksum: sha1:af24f363bb82fc0c9e34caf1ff7f90dbeb469295
+    pristine_git_object: 3b9f96985f7c913773d2a23c8e4ca951876f07ce
+  examples/README.md:
+    id: 9d0f69d6e677
+    last_write_checksum: sha1:bad0af1cdc81a976923c2da4a1d2121c542deebe
+    pristine_git_object: 42a7ac974c49d4e9733b88ed923d494cd757149b
+  examples/package.json:
+    id: c1d7b0ec8e7e
+    last_write_checksum: sha1:d0cfbfb7bf179f83de18a6938c153afe7c0be765
+    pristine_git_object: 16d6139da3bb485a29d87aec26074eb1da6b6186
+  examples/usersUsersCreate.example.ts:
+    id: 8cf3d96f61a0
+    last_write_checksum: sha1:1a45f6470e73085f338b952f2e428dce1327fdaa
+    pristine_git_object: 67f2d1bb265501a56b02379ee2918bc9abe1ce0a
+  jsr.json:
+    id: 7f6ab7767282
+    last_write_checksum: sha1:c68c40dcec155798c571eb42909ac125978df3df
+    pristine_git_object: d84ac26ecf8b9a883d962b0d6a0f3ace119a3896
+  package.json:
+    id: 7030d0b2f71b
+    last_write_checksum: sha1:b956697bc393b7038b2a11436602f84b6b7838bb
+    pristine_git_object: 8fc07bbb35a72baad8934d11b3da8fe0bff058dc
+  src/core.ts:
+    id: f431fdbcd144
+    last_write_checksum: sha1:8f888dd0732758ce31897efe19cab1bce11801c4
+    pristine_git_object: ab84193fb3355243689c638382230911aa26811c
+  src/funcs/accountsAccountsClose.ts:
+    id: 5809e693a3be
+    last_write_checksum: sha1:36904e40fbde1004329de4fa84e911105a8553cf
+    pristine_git_object: f53153b73eecfba72cb4f35b0808b6b25230b144
+  src/funcs/accountsAccountsCreate.ts:
+    id: 042065bf1b6d
+    last_write_checksum: sha1:ce7e70b81cff3db73d8dcf0fe42051b458a2bcd4
+    pristine_git_object: fc543fcc87e255178d62674135a62373cf5f5bd2
+  src/funcs/accountsAccountsDeposit.ts:
+    id: 4de3aff1b675
+    last_write_checksum: sha1:a300356da8a73278671fd44cdd8a049ab539f8ea
+    pristine_git_object: 00647c0f679a55afe2de482fcdb7d1095c31747c
+  src/funcs/accountsAccountsList.ts:
+    id: 73d3b44d0663
+    last_write_checksum: sha1:6236537a1ef9556b4500ab168810af7f0b7ad815
+    pristine_git_object: 889ad3cf1666d5a829bea0f4d0491e834a246229
+  src/funcs/accountsAccountsRetrieve.ts:
+    id: a02ea19e4594
+    last_write_checksum: sha1:f1f7a3b1ca7040b1a2bbf9d2221ad2b6f482394c
+    pristine_git_object: 5fff8ea9fbaa60f97b26d59da3ce26bd6bc3ca79
+  src/funcs/accountsAccountsTransfer.ts:
+    id: f3e32eae7104
+    last_write_checksum: sha1:2db14ab278ddf4fe68091babf627245cd0bbcd43
+    pristine_git_object: a0e0f506bb8becb573a99a8ecdf4297df4e3adc6
+  src/funcs/accountsAccountsUpdateStatus.ts:
+    id: 94c290fdf295
+    last_write_checksum: sha1:8b335cd4f5bc02a176f2ed5c3aaa72aa00a40ece
+    pristine_git_object: 61bb65ebdae8a98585d272b4cea9cc152f270be7
+  src/funcs/accountsAccountsWithdraw.ts:
+    id: 0bad1f978b31
+    last_write_checksum: sha1:dfa313f32a0e5c7063ba9186d692711cff2c6e67
+    pristine_git_object: f50d4e7204d4e4b6bcd59183e2b674bfac46b50c
+  src/funcs/transactionsTransactionsListByAccount.ts:
+    id: d28c0990c229
+    last_write_checksum: sha1:ea3cc0f295ab87e4bc40031a89ff2563a41aabe9
+    pristine_git_object: 1aa15f3c2a16e9975e18185f2325d4c1ffdad1f2
+  src/funcs/transactionsTransactionsRetrieve.ts:
+    id: 902481ca9060
+    last_write_checksum: sha1:eec95de97ad72132b4f129ff4fc726a40a31a375
+    pristine_git_object: 000ebe7babc628b60d24aeeffa29ba0baee418ca
+  src/funcs/usersUsersCreate.ts:
+    id: 78fec66b8a47
+    last_write_checksum: sha1:649a7308d31f0369b7945fe51bdf5fa0cbc27052
+    pristine_git_object: ade721be62d55fa5c60b72c02e8bb2fa3a73fe17
+  src/hooks/hooks.ts:
+    id: a2463fc6f69b
+    last_write_checksum: sha1:3a90d88b4c6c07247db8e5f6441a79538232394e
+    pristine_git_object: 94ad0a323123b34dc638717c5d67a3c23c54d5c6
+  src/hooks/index.ts:
+    id: 5f2dab62b520
+    last_write_checksum: sha1:1a11c073a6cd792932218e1d4ed36b8567bad8ef
+    pristine_git_object: f60ec7acd76141a71d78008c5a362eb0236d8335
+  src/hooks/types.ts:
+    id: 2a02d86ec24f
+    last_write_checksum: sha1:27a3444c4839bec58ae89820fd8c2483edafc3f4
+    pristine_git_object: 9c36bf01332084f735909a71036c3544cc4c7e3a
+  src/index.ts:
+    id: c5fb850250c7
+    last_write_checksum: sha1:35c9cde3ae14b18b3f893a1afe8b6c44f8760f24
+    pristine_git_object: dbcba164a0082e3bb8c43cf21fa7f8ffb9d35dfc
+  src/lib/base64.ts:
+    id: "598522066688"
+    last_write_checksum: sha1:b0b12ddbd8625efb47c0e955a18641aeb10c6532
+    pristine_git_object: 0aebd8b0a4867e35cb3348fc52921c3c0b4725b7
+  src/lib/config.ts:
+    id: 320761608fb3
+    last_write_checksum: sha1:74fcc043049a331f07c4437091049d020985ca34
+    pristine_git_object: f764fc4be336160f5e93198951180f493fefc65b
+  src/lib/dlv.ts:
+    id: b1988214835a
+    last_write_checksum: sha1:1dd3e3fbb4550c4bf31f5ef997faff355d6f3250
+    pristine_git_object: e81091f5e536f82739f71379b1fddc2d147c49e2
+  src/lib/encodings.ts:
+    id: 3bd8ead98afd
+    last_write_checksum: sha1:d20c131976ab8ac68b22bdde2b7ed84b5b873922
+    pristine_git_object: 31cd3733907afbee3641b9ab680ed417247a7d33
+  src/lib/env.ts:
+    id: c52972a3b198
+    last_write_checksum: sha1:818b54d8d359838532d37f876efda80f4a1f9b01
+    pristine_git_object: 50b7c74b7242d95583d6dffdafd52774c69012ab
+  src/lib/files.ts:
+    id: e5efa54fcb95
+    last_write_checksum: sha1:d0f325f445b8d22e7d73baf052c585ec2dd24841
+    pristine_git_object: 0344cd046d033f9e8a55de02f7935c5cec5dc30b
+  src/lib/http.ts:
+    id: 63a80782d37e
+    last_write_checksum: sha1:797cbf16d3c7c4d62d3ba0eedb08617524938457
+    pristine_git_object: 13cf1fd7894a89f727b8d2db2ad24313a94f68c7
+  src/lib/is-plain-object.ts:
+    id: b9862591096a
+    last_write_checksum: sha1:df687f25a9590b6fd95d39df41a652ae3fd4e517
+    pristine_git_object: 61070d3d7c7e5e95b1ed7e7ea21869eb0767db77
+  src/lib/logger.ts:
+    id: 7ee7741a02bf
+    last_write_checksum: sha1:0ec9d3a2a34c362746b767e4f9a746c055d57a7b
+    pristine_git_object: d181f2937d4128afbe9b0327e0f81d1fa9c877b7
+  src/lib/matchers.ts:
+    id: d54b2253b719
+    last_write_checksum: sha1:ca356f038cdd731503224634d0065e276c9dd305
+    pristine_git_object: 9e574d4d7e005154db9f9a8df0bd705d698a1e6d
+  src/lib/primitives.ts:
+    id: 74859f750b28
+    last_write_checksum: sha1:987869fc54790b9c22e9182099103d6aa7c67016
+    pristine_git_object: d21f1dc49affa4e6d324bdd60811b470fdfa7eb6
+  src/lib/retries.ts:
+    id: b24a69d15639
+    last_write_checksum: sha1:f3da74dffcbe2756c69393f8600205aa1dc06e68
+    pristine_git_object: e3ce9aba72150fc3c18f3105d39b21aba809377b
+  src/lib/schemas.ts:
+    id: deb4b531fae1
+    last_write_checksum: sha1:209cfaabfa7fc1c1310f97453215cb0755619c6e
+    pristine_git_object: 47edb9725c2482c667e2ddc8a56b1fec4285c492
+  src/lib/sdks.ts:
+    id: 8a6d91f1218d
+    last_write_checksum: sha1:748a4119ffdd1f218dae00345814199377b95abe
+    pristine_git_object: ddd36d67f68fef745b592976d6e6aa6591176ddd
+  src/lib/security.ts:
+    id: 0502afa7922e
+    last_write_checksum: sha1:171c6a843087280736cc1bb8e8fd51a4cc8bd8e7
+    pristine_git_object: 8f53f29883dddb9de4aafcf38e1e559efccb25f1
+  src/lib/url.ts:
+    id: b0057e24ed76
+    last_write_checksum: sha1:d124050c7e755c0cce233b9e029afb584ff65201
+    pristine_git_object: f3a8de6c021de59c991707946cd294596cae954d
+  src/models/account.ts:
+    id: d5ea65253b06
+    last_write_checksum: sha1:94a25cc3d1aeac3b3653dfb436213cff4f445396
+    pristine_git_object: 86cbfab314c98ba42c26e8a7e4f3e0e364a94382
+  src/models/accountstatus.ts:
+    id: 7123d83ecb5d
+    last_write_checksum: sha1:71d1cbd565ebcb639ac3cd905b8c95b723df0c4c
+    pristine_git_object: ae9e9bb18f93e35aff6f1d9119f646314b8752dd
+  src/models/accounttransactionresult.ts:
+    id: b28721e98160
+    last_write_checksum: sha1:25ac42738a0ab4a0b5f5788a6ccd35d5cad4bbb5
+    pristine_git_object: d3120caa8c976a7dbbc72bb4f003452bb6d8925c
+  src/models/accounttype.ts:
+    id: d7e0ac61c6f0
+    last_write_checksum: sha1:63b84f5826a9f591f119a5068a47f10c6b34bf09
+    pristine_git_object: a95b2d95fe83359a88db03f62b118e857fe00b5d
+  src/models/createaccountrequest.ts:
+    id: 48915bb9322f
+    last_write_checksum: sha1:3a36cc674819fbb7aa7bee23fd5ac2e0165c06a6
+    pristine_git_object: deb1c8187877fe3f87d82aec9e178858cb6bed41
+  src/models/createuserrequest.ts:
+    id: 6ae65719f3b6
+    last_write_checksum: sha1:b36a1abb8dbe5db68cf5abd041f174c92f3d6ba2
+    pristine_git_object: dfc4e7f3248748947e249a96acf0ade87730d040
+  src/models/createuserresponse.ts:
+    id: 7beecb3e23e2
+    last_write_checksum: sha1:f435381559fa609a5c314acc364b52e410680bb6
+    pristine_git_object: 40b6e92b1a5175f9ea5fd99253efefe4084f1db6
+  src/models/depositrequest.ts:
+    id: 19315e3f61ee
+    last_write_checksum: sha1:0e90747957ae52c34335bf3badb37aa5aa087391
+    pristine_git_object: de63cd26879f4ba0b1b3f13ddd117cea2be7c17b
+  src/models/errors/error.ts:
+    id: b25549ecd884
+    last_write_checksum: sha1:3b28be5576e520526305acb7a0f66b725f6fa282
+    pristine_git_object: 6c91b14d6c224efdd7cebb4e1eac0753136a0fc0
+  src/models/errors/httpclienterrors.ts:
+    id: 6948de76af99
+    last_write_checksum: sha1:994ced121c54fecd0af038ccfb7855fbfd3868ec
+    pristine_git_object: b34f612124c797c2a1106b9735708f679a90b74f
+  src/models/errors/index.ts:
+    id: c4e22507cb83
+    last_write_checksum: sha1:b4c283269f114bce8514045ea6ffba9736132af9
+    pristine_git_object: ce9f659e718e2725858c7f50dac63fe952f7a22d
+  src/models/errors/railsdefaulterror.ts:
+    id: d097c13301b8
+    last_write_checksum: sha1:3f089a46be78e6aee176d5d985f1558e25a3385f
+    pristine_git_object: 994981fcabbeee603704bae3aa311aed00c7d23f
+  src/models/errors/railserror.ts:
+    id: bcbbfb7eebaa
+    last_write_checksum: sha1:8ef528a0cf9a7042e2b50f04a47f06f7f86e261f
+    pristine_git_object: f4613fcaeb8370c278b497d1eda5f47e409b6a90
+  src/models/errors/responsevalidationerror.ts:
+    id: 88ff98a41be9
+    last_write_checksum: sha1:34dbec64d08ff53d49dbf9b34ac2c6863a103dfc
+    pristine_git_object: d2566850017755043e8a2022d9204c36324551ea
+  src/models/errors/sdkvalidationerror.ts:
+    id: fb6b2b49c445
+    last_write_checksum: sha1:a69da17627bcc32b820544608f3400423ea53f26
+    pristine_git_object: 6826e1208a5d7b7d310535d18909646522bf0fbd
+  src/models/index.ts:
+    id: f93644b0f37e
+    last_write_checksum: sha1:9e22d1666268010d7b58d81da43af35ea0c5ca1a
+    pristine_git_object: 1afc7d437360d2cf67fccb0b078cb6ae39b70ff9
+  src/models/operations/accountsclose.ts:
+    id: 0c80eafdf474
+    last_write_checksum: sha1:805f0e039d4e0482f3b7fd76353e093a237047bc
+    pristine_git_object: 3f02d6d93194b0d09a42c9ebe1e515f7dac7ff82
+  src/models/operations/accountscreate.ts:
+    id: dde8433ec451
+    last_write_checksum: sha1:bd48c84795089d147869c0150e350a476800b757
+    pristine_git_object: 3e4a16a548b4259c367bd5e00768f145eb17f0e2
+  src/models/operations/accountsdeposit.ts:
+    id: 68092502ed16
+    last_write_checksum: sha1:1f927ddd624a5160a135bff415dde0ca2181627a
+    pristine_git_object: 23ecc892484cc8323c9dad67ac47d8db62a77648
+  src/models/operations/accountslist.ts:
+    id: 16ad6c2ebf41
+    last_write_checksum: sha1:ffff16ce64ab621db3e001d5847be2f7113fcb65
+    pristine_git_object: 372524fc8d09179ee59769e4361b7e94c9f008cf
+  src/models/operations/accountsretrieve.ts:
+    id: db4774ceb031
+    last_write_checksum: sha1:ee531cfe2d01b0cf443e45bca29fd34c75e7126b
+    pristine_git_object: 1e25a71eb4bd3d7e27d401341b2f937cf9e6ce7a
+  src/models/operations/accountstransfer.ts:
+    id: 0151c56ac673
+    last_write_checksum: sha1:e23232c04a966d90684db087a962e27625bb03b6
+    pristine_git_object: 01b0fec47c96cd988d56114e0845aedfeb2e6c90
+  src/models/operations/accountsupdatestatus.ts:
+    id: 9dac10bb1b16
+    last_write_checksum: sha1:4868cc3c520d37b1228fc2246782ae83226ee082
+    pristine_git_object: f40376961b9b7099767abf5119724dd959f01378
+  src/models/operations/accountswithdraw.ts:
+    id: fc5286e0ddd2
+    last_write_checksum: sha1:9472eb25ea80ed47e133828a5122e7c0613b2a8f
+    pristine_git_object: 9706b9ccaafe08b8ae7b2899fcabadfc8537f76f
+  src/models/operations/index.ts:
+    id: 0d9ffaf774d2
+    last_write_checksum: sha1:066a0872dadc8218e03b06956f775d7f40392f0d
+    pristine_git_object: 1761d7454b323389d4e84d4614be1d77652a0e1b
+  src/models/operations/transactionslistbyaccount.ts:
+    id: 2e0c1eed2ce3
+    last_write_checksum: sha1:544b427db33a930358b0e0a2518b8ae0532a702b
+    pristine_git_object: 7ea77132f1ff17726305e45e50c79738c8d5e300
+  src/models/operations/transactionsretrieve.ts:
+    id: e584afeea729
+    last_write_checksum: sha1:bfda29d98e330df1d251f4155a55ff84158f28da
+    pristine_git_object: ad7e1635737bb16fe67fa953f098ad9f1304b448
+  src/models/operations/userscreate.ts:
+    id: e85e4324a38d
+    last_write_checksum: sha1:0b4cc646b843cf23da1b6a7b352e92479d0be85a
+    pristine_git_object: 2845d13532f847304028133bed90d8aaed16cbcc
+  src/models/security.ts:
+    id: d90c6c784ca5
+    last_write_checksum: sha1:2ce58351fd33cf08e9acf00b9d5f5200216e2d3c
+    pristine_git_object: 1b79d3c9ff491e0045be0326b516a16907829735
+  src/models/transaction.ts:
+    id: e95e32597b84
+    last_write_checksum: sha1:5a1e13947a2e9b0903bc6ed333f5e7a8c701a17f
+    pristine_git_object: 8692039b80f47c7987a95f9ef2f30297459363c8
+  src/models/transactionstatus.ts:
+    id: 8710af731095
+    last_write_checksum: sha1:9565bd48cc26c30f788136eb9b19a93fbb2e96e9
+    pristine_git_object: ab70963ed6e59a832fabd0995d8ef973de76b287
+  src/models/transactiontype.ts:
+    id: 50b0e691d718
+    last_write_checksum: sha1:4db73359de6448003ae99c2d5ff9feb0373b843a
+    pristine_git_object: 17fe5ce9aaacd8987ac95be8d52a9856d23fc4e4
+  src/models/transferrequest.ts:
+    id: 04c974972af0
+    last_write_checksum: sha1:0ccd087714264804373828f33108e2daebff1547
+    pristine_git_object: 9bfe87b5bc73a53fd7f48660b5c521588671c0ec
+  src/models/transferresult.ts:
+    id: 3847e7b51ed6
+    last_write_checksum: sha1:474bbf2089012adfac751132fadeab4223b8c34e
+    pristine_git_object: 8887e1a33ca0964a1dfcbf46faf209732b8f4776
+  src/models/updateaccountrequest.ts:
+    id: c136d5bc7fb6
+    last_write_checksum: sha1:9576803e6bc31bb5c9cbda0dac7a11afb3163d0a
+    pristine_git_object: 107b365dff2ff54ec2e1e83f095def94ba77e7f6
+  src/models/withdrawrequest.ts:
+    id: 71f8aac2784f
+    last_write_checksum: sha1:a40074509e867a8e78baf9c2446d9509c49a3c6e
+    pristine_git_object: 6765a0c6455e091b6c8b518a400c1ef9b257adb7
+  src/models/xenvironment.ts:
+    id: 73a97f609c40
+    last_write_checksum: sha1:2cf383c1e027f8ad093b52c07088eddd5dcc0e04
+    pristine_git_object: 5d04781f1c3bbcf7f19224618bf42591f66f2241
+  src/sdk/accounts.ts:
+    id: a4031260e046
+    last_write_checksum: sha1:25024733b496145c27422d4779bd9f4ce32395c9
+    pristine_git_object: cadef8819d70bf06515239df53a628f4bda000f8
+  src/sdk/index.ts:
+    id: a857902a703f
+    last_write_checksum: sha1:ed6d64f2a6135349aa8498b8d8cff9ba85c7fb8f
+    pristine_git_object: ecac2264817bb369ff2dbf0f0e9029807e67ff77
+  src/sdk/sdk.ts:
+    id: 784571af2f69
+    last_write_checksum: sha1:9cae3a56b7d814a565fe4cb8ae3979912424f7bc
+    pristine_git_object: 7ca115189c562d0784d494641d96290aff556fc7
+  src/sdk/transactions.ts:
+    id: bcd7a9b32ed7
+    last_write_checksum: sha1:5f9aaaff01091c0bfbe678ff609594b1b06a9e72
+    pristine_git_object: 8ebc02a2154f4978fe95fbf7c8fc088d3ee487ad
+  src/sdk/users.ts:
+    id: 2df5828eed03
+    last_write_checksum: sha1:1882ff7314fb50a36504ad4cd553f001c9a5529b
+    pristine_git_object: a6105d75c9fadca0292a500c9c29ac99d509f24d
+  src/types/async.ts:
+    id: fac8da972f86
+    last_write_checksum: sha1:3ff07b3feaf390ec1aeb18ff938e139c6c4a9585
+    pristine_git_object: 689dba5de50e8769e5f3bb913e3f42a146d15bc1
+  src/types/blobs.ts:
+    id: f8ab9b326c86
+    last_write_checksum: sha1:cf45d78916671cb6345a11c97c633c64402bc27c
+    pristine_git_object: cce2892d4f573a120ef3907db90ab15f5979cfda
+  src/types/constdatetime.ts:
+    id: 0f7b6f513917
+    last_write_checksum: sha1:dfaaf9adfaf49808bd4c9dea0039f21b7088d9c0
+    pristine_git_object: fe62144eaf6a2054fc8ca9a98466e70f41b5434d
+  src/types/enums.ts:
+    id: 4d03ddfe5100
+    last_write_checksum: sha1:ee590453d2c87e33e89c633d37ee46907eca0e58
+    pristine_git_object: aba0ffd2a3308a31e516d83b52823d80aa65a8f9
+  src/types/fp.ts:
+    id: ae9f0fb8aab6
+    last_write_checksum: sha1:d24994d58f37a1ca106847fcc6d2e976c6f1c093
+    pristine_git_object: ccbe51eac69dfb0da5131f14fd753c4b47c1d527
+  src/types/index.ts:
+    id: cd7a0a5ed005
+    last_write_checksum: sha1:bf43b3dccb960ca9ae9c5ab940da4786255881cd
+    pristine_git_object: abf0b7ab8f196829df8946da40d627a46da68e3c
+  src/types/operations.ts:
+    id: 314da01dca47
+    last_write_checksum: sha1:c49e724cfb1259296381cb57bc0fcdd2eae45865
+    pristine_git_object: beb81e10f0b9eee2ed398a853fe6f737b743f818
+  src/types/rfcdate.ts:
+    id: 9eb64906dcd6
+    last_write_checksum: sha1:8e5f382e02fe21c2f2e24deb1b7bbf8cddd3dd16
+    pristine_git_object: c79b3f53a3dd922aa2ace5a4191c8652cf9a8e89
+  src/types/streams.ts:
+    id: f99be9c4bf14
+    last_write_checksum: sha1:cc9ced2dd34a76c3a1bd7784ccda1cc3b37ab9a9
+    pristine_git_object: a0163e7a99cea88f21d0ad4ce3af1c720180ee20
+  src/types/unrecognized.ts:
+    id: 476605c40716
+    last_write_checksum: sha1:d33ac686528492f4cdc0dbf81ed343b4afe020fe
+    pristine_git_object: b7a2a13f3dff50663429df24ae2f55b647ff1084
+  tsconfig.json:
+    id: 61ebb9fd6e8c
+    last_write_checksum: sha1:c3ec7996536cdb9a54319e7d1eb3b199b733d34c
+    pristine_git_object: 0ccdbe286a8780e06a469a9eb7e2fb95322fd507
 examples:
   updatePet:
     speakeasy-default-update-pet:
@@ -367,4 +858,237 @@ examples:
           application/json: {}
         "500":
           application/json: {}
+  usersCreate:
+    speakeasy-default-users-create:
+      parameters:
+        header:
+          X-Environment: "production"
+      requestBody:
+        application/json: {"first_name": "Alexanne", "last_name": "Wehner", "email": "Myah_Veum19@yahoo.com", "password": "TXz5lHn_rozuDSn"}
+      responses:
+        "200":
+          application/json: {"user_id": "3e4105cf-3aec-4367-80eb-0bcc9947317b", "status": "<value>"}
+        "400":
+          application/json: {"status": "error", "code": "VALIDATION_FAILED", "message": "Something went wrong"}
+        "500":
+          application/json: {"status": "error", "code": "VALIDATION_FAILED", "message": "Something went wrong"}
+  accountsCreate:
+    speakeasy-default-accounts-create:
+      requestBody:
+        application/json: {"account_type": "saving", "user_id": "795523de-24bc-4177-824a-bee4de92a0bd", "currency": "USD"}
+      responses:
+        "201":
+          application/json: {"id": "cd1f33d6-3203-4e79-93f4-5e5fdf435a58", "account_number": "<value>", "account_type": "checking", "environment": "<value>", "user_id": "90f9ce23-6854-431d-bc35-73245e56df37", "balance": "<value>", "currency": "Ethiopian Birr", "status": "active"}
+        "400":
+          application/json: {"status": "error", "code": "VALIDATION_FAILED", "message": "Something went wrong"}
+        "500":
+          application/json: {"status": "error", "code": "VALIDATION_FAILED", "message": "Something went wrong"}
+  accountsList:
+    speakeasy-default-accounts-list:
+      parameters:
+        query:
+          user_id: "11082ddf-06b2-4844-a796-77324356047b"
+      responses:
+        "200":
+          application/json: [{"id": "6d05be12-02b0-4fd4-9cc0-24596faedc5f", "account_number": "<value>", "account_type": "checking", "environment": "<value>", "user_id": "f7183bd7-70f2-4da7-a3b1-fa4cc3647aaa", "balance": "<value>", "currency": "Brazilian Real", "status": "closed"}]
+        "400":
+          application/json: {"status": "error", "code": "VALIDATION_FAILED", "message": "Something went wrong"}
+        "500":
+          application/json: {"status": "error", "code": "VALIDATION_FAILED", "message": "Something went wrong"}
+  accountsRetrieve:
+    speakeasy-default-accounts-retrieve:
+      parameters:
+        path:
+          id: "33f03b55-3149-49b1-b0da-8002068f6dc4"
+      responses:
+        "200":
+          application/json: {"id": "b902b6a0-c959-48e0-b07d-92bf85c9388b", "account_number": "<value>", "account_type": "saving", "environment": "<value>", "user_id": "cf27ad3d-af37-4998-85fe-7b4a9c79954f", "balance": "<value>", "currency": "Egyptian Pound", "status": "active"}
+        "400":
+          application/json: {"status": "error", "code": "VALIDATION_FAILED", "message": "Something went wrong"}
+        "500":
+          application/json: {"status": "error", "code": "VALIDATION_FAILED", "message": "Something went wrong"}
+  accountsUpdateStatus:
+    speakeasy-default-accounts-update-status:
+      parameters:
+        path:
+          id: "79189c96-0fe5-479d-bcc8-0e2052b74662"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"id": "346faca9-dc9c-40cf-a756-44ad6066d51a", "account_number": "<value>", "account_type": "saving", "environment": "<value>", "user_id": "bf800b3d-24ce-418f-a025-d62c7f847da5", "balance": "<value>", "currency": "Nuevo Sol", "status": "closed"}
+        "400":
+          application/json: {"status": "error", "code": "VALIDATION_FAILED", "message": "Something went wrong"}
+        "500":
+          application/json: {"status": "error", "code": "VALIDATION_FAILED", "message": "Something went wrong"}
+  accountsClose:
+    speakeasy-default-accounts-close:
+      parameters:
+        path:
+          id: "663552dd-c955-459e-9809-a0b0cd848370"
+      responses:
+        "200":
+          application/json: {"id": "c837ae4e-f40c-4b65-aa11-c2d0cce0c181", "account_number": "<value>", "account_type": "checking", "environment": "<value>", "user_id": "0f039ed5-61d6-4f3d-9ef9-83fc847bac23", "balance": "<value>", "currency": "Baht", "status": "closed"}
+        "400":
+          application/json: {"status": "error", "code": "VALIDATION_FAILED", "message": "Something went wrong"}
+        "500":
+          application/json: {"status": "error", "code": "VALIDATION_FAILED", "message": "Something went wrong"}
+  accountsDeposit:
+    speakeasy-default-accounts-deposit:
+      parameters:
+        path:
+          id: "bd87bf62-7b45-4b98-a31c-44ea759b76e3"
+      requestBody:
+        application/json: {"amount": "676.67"}
+      responses:
+        "200":
+          application/json: {"account": {"id": "44e600ac-7ffe-458f-9f7b-f34689d38764", "account_number": "<value>", "account_type": "saving", "environment": "<value>", "user_id": "e5157162-b82c-4602-a867-5c461bf74759", "balance": "<value>", "currency": "Jamaican Dollar", "status": "closed"}, "transaction": {"id": "1f5e00e3-ff26-4874-9eb5-02dc23108c0d", "account_id": "99cd5c49-15d5-41fc-913d-90ac1770d73e", "transaction_type": "recurring_payment", "amount": "79.79", "currency": "Singapore Dollar", "balance_after": "<value>", "status": "cancelled", "created_at": "2025-08-13T14:08:27.520Z", "updated_at": "2026-01-03T08:56:35.678Z"}}
+        "400":
+          application/json: {"status": "error", "code": "VALIDATION_FAILED", "message": "Something went wrong"}
+        "500":
+          application/json: {"status": "error", "code": "VALIDATION_FAILED", "message": "Something went wrong"}
+  accountsWithdraw:
+    speakeasy-default-accounts-withdraw:
+      parameters:
+        path:
+          id: "0c311ee2-14ab-4f73-8c3d-054e4cba3cad"
+      requestBody:
+        application/json: {"amount": "817.38"}
+      responses:
+        "200":
+          application/json: {"account": {"id": "913f93ac-6ca6-472b-b102-aad87b40fd21", "account_number": "<value>", "account_type": "saving", "environment": "<value>", "user_id": "4657b3ae-5928-4845-9689-f32365221d75", "balance": "<value>", "currency": "Jordanian Dinar", "status": "suspended"}, "transaction": {"id": "f13a35be-ad24-4195-8eff-11b3b860e43a", "account_id": "ceadf047-350e-4ce0-b582-3fdf8f4807f5", "transaction_type": "savings_withdraw", "amount": "818.74", "currency": "Baht", "balance_after": "<value>", "status": "failed", "created_at": "2025-10-21T01:33:02.843Z", "updated_at": "2025-10-13T16:22:27.773Z"}}
+        "400":
+          application/json: {"status": "error", "code": "VALIDATION_FAILED", "message": "Something went wrong"}
+        "500":
+          application/json: {"status": "error", "code": "VALIDATION_FAILED", "message": "Something went wrong"}
+  accountsTransfer:
+    speakeasy-default-accounts-transfer:
+      parameters:
+        path:
+          id: "3a11a7c2-36f0-4955-ba89-218fe4574452"
+      requestBody:
+        application/json: {"to_account_id": "13fa99b9-fece-4f6b-b269-d108af4eefa9", "amount": "26.42"}
+      responses:
+        "200":
+          application/json: {"from_account": {"id": "ffbd7062-5534-40ed-bb48-befefbca015f", "account_number": "<value>", "account_type": "saving", "environment": "<value>", "user_id": "2117fe2b-de7f-4fd5-ab88-12d89beef28f", "balance": "<value>", "currency": "Lari", "status": "closed"}, "to_account": {"id": "53e46a31-372f-4d44-affb-0638f7824e53", "account_number": "<value>", "account_type": "saving", "environment": "<value>", "user_id": "53ad50e5-3e02-438a-951b-22917c064e01", "balance": "<value>", "currency": "Aruban Guilder", "status": "active"}, "transaction": {"id": "08737cba-44be-464b-8749-4a4625d4e0c4", "account_id": "7b3c1020-570d-449c-bfd6-dda0b6698165", "transaction_type": "transfer", "amount": "280.79", "currency": "Nuevo Sol", "balance_after": "<value>", "status": "pending", "created_at": "2026-04-28T02:40:29.871Z", "updated_at": "2024-01-28T17:57:53.907Z"}}
+        "400":
+          application/json: {"status": "error", "code": "VALIDATION_FAILED", "message": "Something went wrong"}
+        "500":
+          application/json: {"status": "error", "code": "VALIDATION_FAILED", "message": "Something went wrong"}
+  transactionsListByAccount:
+    speakeasy-default-transactions-list-by-account:
+      parameters:
+        path:
+          account_id: "6d965dc4-4ff5-49ef-a250-aadae0f57792"
+      responses:
+        "200":
+          application/json: [{"id": "e22f76fb-8288-43c8-a029-c1d4d723d9a0", "account_id": "ea80fe08-f42c-47c8-8a76-17c225eb4ef7", "transaction_type": "savings_withdraw", "amount": "919.13", "currency": "Taka", "balance_after": "<value>", "status": "completed", "created_at": "2025-01-27T19:43:17.240Z", "updated_at": "2025-06-17T10:44:31.404Z"}]
+        "400":
+          application/json: {"status": "error", "code": "VALIDATION_FAILED", "message": "Something went wrong"}
+        "500":
+          application/json: {"status": "error", "code": "VALIDATION_FAILED", "message": "Something went wrong"}
+  transactionsRetrieve:
+    speakeasy-default-transactions-retrieve:
+      parameters:
+        path:
+          id: "97b6a892-f409-4197-aaf7-f4f9be5ab90f"
+      responses:
+        "200":
+          application/json: {"id": "f03bc0ad-207a-462b-80b1-1133331ca357", "account_id": "fb968563-8515-4671-923f-b0e9098e89c2", "transaction_type": "transfer", "amount": "267.50", "currency": "Pakistan Rupee", "balance_after": "<value>", "status": "cancelled", "created_at": "2024-09-24T17:52:07.989Z", "updated_at": "2026-07-04T05:47:22.431Z"}
+        "400":
+          application/json: {"status": "error", "code": "VALIDATION_FAILED", "message": "Something went wrong"}
+        "500":
+          application/json: {"status": "error", "code": "VALIDATION_FAILED", "message": "Something went wrong"}
 examplesVersion: 1.0.2
+generatedFiles:
+  - .devcontainer/README.md
+  - .devcontainer/devcontainer.json
+  - .devcontainer/setup.sh
+  - .gitattributes
+  - .npmignore
+  - FUNCTIONS.md
+  - RUNTIMES.md
+  - USAGE.md
+  - docs/lib/utils/retryconfig.md
+  - docs/models/errors/errort.md
+  - docs/models/operations/activebankslist.md
+  - docs/models/operations/bankdistribution.md
+  - docs/models/operations/getdashboardmetricsresponse.md
+  - docs/models/operations/gethealthresponse.md
+  - docs/models/operations/getledgerpendingresponse.md
+  - docs/models/operations/gettransactionsrequest.md
+  - docs/models/operations/gettransactionsresponse.md
+  - docs/models/operations/mondayclearingpreparation.md
+  - docs/models/operations/pagination.md
+  - docs/models/operations/postledgersettleresponse.md
+  - docs/models/operations/postsimulatorstartrequest.md
+  - docs/models/operations/postsimulatorstartresponse.md
+  - docs/models/operations/postwebhookresponse.md
+  - docs/models/operations/settlementoverview.md
+  - docs/models/operations/transactionlog.md
+  - docs/models/transaction.md
+  - docs/sdks/rails/README.md
+  - eslint.config.mjs
+  - examples/.env.template
+  - examples/README.md
+  - examples/package.json
+  - examples/postLedgerSettle.example.ts
+  - jsr.json
+  - package.json
+  - src/core.ts
+  - src/funcs/getDashboardMetrics.ts
+  - src/funcs/getHealth.ts
+  - src/funcs/getLedgerPending.ts
+  - src/funcs/getTransactions.ts
+  - src/funcs/postLedgerSettle.ts
+  - src/funcs/postSimulatorStart.ts
+  - src/funcs/postWebhook.ts
+  - src/hooks/hooks.ts
+  - src/hooks/index.ts
+  - src/hooks/types.ts
+  - src/index.ts
+  - src/lib/base64.ts
+  - src/lib/config.ts
+  - src/lib/dlv.ts
+  - src/lib/encodings.ts
+  - src/lib/env.ts
+  - src/lib/files.ts
+  - src/lib/http.ts
+  - src/lib/is-plain-object.ts
+  - src/lib/logger.ts
+  - src/lib/matchers.ts
+  - src/lib/primitives.ts
+  - src/lib/retries.ts
+  - src/lib/schemas.ts
+  - src/lib/sdks.ts
+  - src/lib/security.ts
+  - src/lib/url.ts
+  - src/models/errors/error.ts
+  - src/models/errors/httpclienterrors.ts
+  - src/models/errors/index.ts
+  - src/models/errors/railsdefaulterror.ts
+  - src/models/errors/railserror.ts
+  - src/models/errors/responsevalidationerror.ts
+  - src/models/errors/sdkvalidationerror.ts
+  - src/models/index.ts
+  - src/models/operations/getdashboardmetrics.ts
+  - src/models/operations/gethealth.ts
+  - src/models/operations/getledgerpending.ts
+  - src/models/operations/gettransactions.ts
+  - src/models/operations/index.ts
+  - src/models/operations/postledgersettle.ts
+  - src/models/operations/postsimulatorstart.ts
+  - src/models/operations/postwebhook.ts
+  - src/models/transaction.ts
+  - src/sdk/index.ts
+  - src/sdk/sdk.ts
+  - src/types/async.ts
+  - src/types/blobs.ts
+  - src/types/constdatetime.ts
+  - src/types/enums.ts
+  - src/types/fp.ts
+  - src/types/index.ts
+  - src/types/operations.ts
+  - src/types/rfcdate.ts
+  - src/types/streams.ts
+  - tsconfig.json

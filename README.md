@@ -17,7 +17,7 @@ Developer-friendly & type-safe Typescript SDK specifically catered to leverage *
 <!-- Start Summary [summary] -->
 ## Summary
 
-Rails PoC API: OpenAPI 3.0 specification for the Rails PoC API
+Rails API: Rails public API for founders
 <!-- End Summary [summary] -->
 
 <!-- Start Table of Contents [toc] -->
@@ -27,6 +27,7 @@ Rails PoC API: OpenAPI 3.0 specification for the Rails PoC API
   * [SDK Installation](#sdk-installation)
   * [Requirements](#requirements)
   * [SDK Example Usage](#sdk-example-usage)
+  * [Authentication](#authentication)
   * [Available Resources and Operations](#available-resources-and-operations)
   * [Standalone functions](#standalone-functions)
   * [Retries](#retries)
@@ -43,37 +44,30 @@ Rails PoC API: OpenAPI 3.0 specification for the Rails PoC API
 <!-- Start SDK Installation [installation] -->
 ## SDK Installation
 
-> [!TIP]
-> To finish publishing your SDK to npm and others you must [run your first generation action](https://www.speakeasy.com/docs/github-setup#step-by-step-guide).
-
-
 The SDK can be installed with either [npm](https://www.npmjs.com/), [pnpm](https://pnpm.io/), [bun](https://bun.sh/) or [yarn](https://classic.yarnpkg.com/en/) package managers.
 
 ### NPM
 
 ```bash
-npm add https://github.com/sibabale/rails-typescript
+npm add @rails/sdk
 ```
 
 ### PNPM
 
 ```bash
-pnpm add https://github.com/sibabale/rails-typescript
+pnpm add @rails/sdk
 ```
 
 ### Bun
 
 ```bash
-bun add https://github.com/sibabale/rails-typescript
+bun add @rails/sdk
 ```
 
 ### Yarn
 
 ```bash
-yarn add https://github.com/sibabale/rails-typescript zod
-
-# Note that Yarn does not install peer dependencies automatically. You will need
-# to install zod as shown above.
+yarn add @rails/sdk
 ```
 
 > [!NOTE]
@@ -92,12 +86,19 @@ For supported JavaScript runtimes, please consult [RUNTIMES.md](RUNTIMES.md).
 ### Example
 
 ```typescript
-import { Rails } from "rails";
+import { Rails } from "@rails/sdk";
 
-const rails = new Rails();
+const rails = new Rails({
+  apiKeyAuth: process.env["RAILS_API_KEY_AUTH"] ?? "",
+});
 
 async function run() {
-  const result = await rails.postLedgerSettle();
+  const result = await rails.users.usersCreate("production", {
+    firstName: "Alexanne",
+    lastName: "Wehner",
+    email: "Myah_Veum19@yahoo.com",
+    password: "TXz5lHn_rozuDSn",
+  });
 
   console.log(result);
 }
@@ -108,21 +109,66 @@ run();
 <!-- End SDK Example Usage [usage] -->
 
 
+<!-- Start Authentication [security] -->
+## Authentication
+
+### Per-Client Security Schemes
+
+This SDK supports the following security scheme globally:
+
+| Name         | Type   | Scheme  | Environment Variable |
+| ------------ | ------ | ------- | -------------------- |
+| `apiKeyAuth` | apiKey | API key | `RAILS_API_KEY_AUTH` |
+
+To authenticate with the API the `apiKeyAuth` parameter must be set when initializing the SDK client instance. For example:
+```typescript
+import { Rails } from "@rails/sdk";
+
+const rails = new Rails({
+  apiKeyAuth: process.env["RAILS_API_KEY_AUTH"] ?? "",
+});
+
+async function run() {
+  const result = await rails.users.usersCreate("production", {
+    firstName: "Alexanne",
+    lastName: "Wehner",
+    email: "Myah_Veum19@yahoo.com",
+    password: "TXz5lHn_rozuDSn",
+  });
+
+  console.log(result);
+}
+
+run();
+
+```
+<!-- End Authentication [security] -->
+
 <!-- Start Available Resources and Operations [operations] -->
 ## Available Resources and Operations
 
 <details open>
 <summary>Available methods</summary>
 
-### [Rails SDK](docs/sdks/rails/README.md)
+### [Accounts](docs/sdks/accounts/README.md)
 
-* [postLedgerSettle](docs/sdks/rails/README.md#postledgersettle) - Settle pending transactions
-* [getTransactions](docs/sdks/rails/README.md#gettransactions) - Get transactions with filters and summary
-* [postWebhook](docs/sdks/rails/README.md#postwebhook) - Receive a transaction webhook
-* [getLedgerPending](docs/sdks/rails/README.md#getledgerpending) - Get pending transactions
-* [postSimulatorStart](docs/sdks/rails/README.md#postsimulatorstart) - Start transaction simulation
-* [getDashboardMetrics](docs/sdks/rails/README.md#getdashboardmetrics) - Get dashboard metrics
-* [getHealth](docs/sdks/rails/README.md#gethealth) - Health check
+* [accountsCreate](docs/sdks/accounts/README.md#accountscreate) - Create account
+* [accountsList](docs/sdks/accounts/README.md#accountslist) - List accounts
+* [accountsRetrieve](docs/sdks/accounts/README.md#accountsretrieve) - Retrieve account
+* [accountsUpdateStatus](docs/sdks/accounts/README.md#accountsupdatestatus) - Update account status
+* [accountsClose](docs/sdks/accounts/README.md#accountsclose) - Close account
+* [accountsDeposit](docs/sdks/accounts/README.md#accountsdeposit) - Deposit into account
+* [accountsWithdraw](docs/sdks/accounts/README.md#accountswithdraw) - Withdraw from account
+* [accountsTransfer](docs/sdks/accounts/README.md#accountstransfer) - Transfer between accounts
+
+### [Transactions](docs/sdks/transactions/README.md)
+
+* [transactionsListByAccount](docs/sdks/transactions/README.md#transactionslistbyaccount) - List account transactions
+* [transactionsRetrieve](docs/sdks/transactions/README.md#transactionsretrieve) - Retrieve transaction
+
+### [Users](docs/sdks/users/README.md)
+
+* [usersCreate](docs/sdks/users/README.md#userscreate) - Create user
 
 </details>
 <!-- End Available Resources and Operations [operations] -->
@@ -142,13 +188,17 @@ To read more about standalone functions, check [FUNCTIONS.md](./FUNCTIONS.md).
 
 <summary>Available standalone functions</summary>
 
-- [`getDashboardMetrics`](docs/sdks/rails/README.md#getdashboardmetrics) - Get dashboard metrics
-- [`getHealth`](docs/sdks/rails/README.md#gethealth) - Health check
-- [`getLedgerPending`](docs/sdks/rails/README.md#getledgerpending) - Get pending transactions
-- [`getTransactions`](docs/sdks/rails/README.md#gettransactions) - Get transactions with filters and summary
-- [`postLedgerSettle`](docs/sdks/rails/README.md#postledgersettle) - Settle pending transactions
-- [`postSimulatorStart`](docs/sdks/rails/README.md#postsimulatorstart) - Start transaction simulation
-- [`postWebhook`](docs/sdks/rails/README.md#postwebhook) - Receive a transaction webhook
+- [`accountsAccountsClose`](docs/sdks/accounts/README.md#accountsclose) - Close account
+- [`accountsAccountsCreate`](docs/sdks/accounts/README.md#accountscreate) - Create account
+- [`accountsAccountsDeposit`](docs/sdks/accounts/README.md#accountsdeposit) - Deposit into account
+- [`accountsAccountsList`](docs/sdks/accounts/README.md#accountslist) - List accounts
+- [`accountsAccountsRetrieve`](docs/sdks/accounts/README.md#accountsretrieve) - Retrieve account
+- [`accountsAccountsTransfer`](docs/sdks/accounts/README.md#accountstransfer) - Transfer between accounts
+- [`accountsAccountsUpdateStatus`](docs/sdks/accounts/README.md#accountsupdatestatus) - Update account status
+- [`accountsAccountsWithdraw`](docs/sdks/accounts/README.md#accountswithdraw) - Withdraw from account
+- [`transactionsTransactionsListByAccount`](docs/sdks/transactions/README.md#transactionslistbyaccount) - List account transactions
+- [`transactionsTransactionsRetrieve`](docs/sdks/transactions/README.md#transactionsretrieve) - Retrieve transaction
+- [`usersUsersCreate`](docs/sdks/users/README.md#userscreate) - Create user
 
 </details>
 <!-- End Standalone functions [standalone-funcs] -->
@@ -161,12 +211,19 @@ Some of the endpoints in this SDK support retries.  If you use the SDK without a
 
 To change the default retry strategy for a single API call, simply provide a retryConfig object to the call:
 ```typescript
-import { Rails } from "rails";
+import { Rails } from "@rails/sdk";
 
-const rails = new Rails();
+const rails = new Rails({
+  apiKeyAuth: process.env["RAILS_API_KEY_AUTH"] ?? "",
+});
 
 async function run() {
-  const result = await rails.postLedgerSettle({
+  const result = await rails.users.usersCreate("production", {
+    firstName: "Alexanne",
+    lastName: "Wehner",
+    email: "Myah_Veum19@yahoo.com",
+    password: "TXz5lHn_rozuDSn",
+  }, {
     retries: {
       strategy: "backoff",
       backoff: {
@@ -188,7 +245,7 @@ run();
 
 If you'd like to override the default retry strategy for all operations that support retries, you can provide a retryConfig at SDK initialization:
 ```typescript
-import { Rails } from "rails";
+import { Rails } from "@rails/sdk";
 
 const rails = new Rails({
   retryConfig: {
@@ -201,10 +258,16 @@ const rails = new Rails({
     },
     retryConnectionErrors: false,
   },
+  apiKeyAuth: process.env["RAILS_API_KEY_AUTH"] ?? "",
 });
 
 async function run() {
-  const result = await rails.postLedgerSettle();
+  const result = await rails.users.usersCreate("production", {
+    firstName: "Alexanne",
+    lastName: "Wehner",
+    email: "Myah_Veum19@yahoo.com",
+    password: "TXz5lHn_rozuDSn",
+  });
 
   console.log(result);
 }
@@ -230,14 +293,21 @@ run();
 
 ### Example
 ```typescript
-import { Rails } from "rails";
-import * as errors from "rails/models/errors";
+import { Rails } from "@rails/sdk";
+import * as errors from "@rails/sdk/models/errors";
 
-const rails = new Rails();
+const rails = new Rails({
+  apiKeyAuth: process.env["RAILS_API_KEY_AUTH"] ?? "",
+});
 
 async function run() {
   try {
-    const result = await rails.postLedgerSettle();
+    const result = await rails.users.usersCreate("production", {
+      firstName: "Alexanne",
+      lastName: "Wehner",
+      email: "Myah_Veum19@yahoo.com",
+      password: "TXz5lHn_rozuDSn",
+    });
 
     console.log(result);
   } catch (error) {
@@ -250,7 +320,8 @@ async function run() {
 
       // Depending on the method different errors may be thrown
       if (error instanceof errors.ErrorT) {
-        console.log(error.data$.error); // string
+        console.log(error.data$.status); // string
+        console.log(error.data$.code); // string
         console.log(error.data$.message); // string
       }
     }
@@ -264,7 +335,7 @@ run();
 ### Error Classes
 **Primary errors:**
 * [`RailsError`](./src/models/errors/railserror.ts): The base class for HTTP error responses.
-  * [`ErrorT`](./src/models/errors/errort.ts): Generic error.
+  * [`ErrorT`](./src/models/errors/errort.ts): Error.
 
 <details><summary>Less common errors (6)</summary>
 
@@ -291,14 +362,20 @@ run();
 
 The default server can be overridden globally by passing a URL to the `serverURL: string` optional parameter when initializing the SDK client instance. For example:
 ```typescript
-import { Rails } from "rails";
+import { Rails } from "@rails/sdk";
 
 const rails = new Rails({
-  serverURL: "http://localhost:8000/api",
+  serverURL: "https://api.rails.com",
+  apiKeyAuth: process.env["RAILS_API_KEY_AUTH"] ?? "",
 });
 
 async function run() {
-  const result = await rails.postLedgerSettle();
+  const result = await rails.users.usersCreate("production", {
+    firstName: "Alexanne",
+    lastName: "Wehner",
+    email: "Myah_Veum19@yahoo.com",
+    password: "TXz5lHn_rozuDSn",
+  });
 
   console.log(result);
 }
@@ -326,8 +403,8 @@ custom header and a timeout to requests and how to use the `"requestError"` hook
 to log errors:
 
 ```typescript
-import { Rails } from "rails";
-import { HTTPClient } from "rails/lib/http";
+import { Rails } from "@rails/sdk";
+import { HTTPClient } from "@rails/sdk/lib/http";
 
 const httpClient = new HTTPClient({
   // fetcher takes a function that has the same signature as native `fetch`.
@@ -353,7 +430,7 @@ httpClient.addHook("requestError", (error, request) => {
   console.groupEnd();
 });
 
-const sdk = new Rails({ httpClient });
+const sdk = new Rails({ httpClient: httpClient });
 ```
 <!-- End Custom HTTP Client [http-client] -->
 
@@ -368,7 +445,7 @@ You can pass a logger that matches `console`'s interface as an SDK option.
 > Beware that debug logging will reveal secrets, like API tokens in headers, in log messages printed to a console or files. It's recommended to use this feature only during local development and not in production.
 
 ```typescript
-import { Rails } from "rails";
+import { Rails } from "@rails/sdk";
 
 const sdk = new Rails({ debugLogger: console });
 ```

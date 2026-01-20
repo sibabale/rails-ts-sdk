@@ -19,20 +19,27 @@ specific category of applications.
 ## Example
 
 ```typescript
-import { RailsCore } from "rails/core.js";
-import { postLedgerSettle } from "rails/funcs/postLedgerSettle.js";
+import { RailsCore } from "@rails/sdk/core.js";
+import { usersUsersCreate } from "@rails/sdk/funcs/usersUsersCreate.js";
 
 // Use `RailsCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
-const rails = new RailsCore();
+const rails = new RailsCore({
+  apiKeyAuth: process.env["RAILS_API_KEY_AUTH"] ?? "",
+});
 
 async function run() {
-  const res = await postLedgerSettle(rails);
+  const res = await usersUsersCreate(rails, "production", {
+    firstName: "Alexanne",
+    lastName: "Wehner",
+    email: "Myah_Veum19@yahoo.com",
+    password: "TXz5lHn_rozuDSn",
+  });
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("postLedgerSettle failed:", res.error);
+    console.log("usersUsersCreate failed:", res.error);
   }
 }
 

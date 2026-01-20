@@ -17,20 +17,28 @@ generation:
     securityFeb2025: true
     sharedErrorComponentsApr2025: true
   auth:
-    oAuth2ClientCredentialsEnabled: true
-    oAuth2PasswordEnabled: true
+    oAuth2ClientCredentialsEnabled: false
+    oAuth2PasswordEnabled: false
+    hoistGlobalSecurity: true
   sdkHooksConfigAccess: true
+  schemas:
+    allOfMergeStrategy: shallowMerge
+  requestBodyFieldName: ""
+  persistentEdits: {}
   tests:
     generateTests: false
     generateNewTests: true
     skipResponseBodyAssertions: false
 typescript:
-  version: 0.1.3
+  version: 0.2.1
+  acceptHeaderEnum: true
   additionalDependencies:
     dependencies: {}
     devDependencies: {}
     peerDependencies: {}
   additionalPackageJSON: {}
+  additionalScripts: {}
+  alwaysIncludeInboundAndOutbound: false
   author: Speakeasy
   baseErrorName: RailsError
   clientServerStatusCodesAsErrors: true
@@ -41,8 +49,13 @@ typescript:
   enableReactQuery: false
   enumFormat: union
   envVarPrefix: RAILS
+  exportZodModelNamespace: false
+  flatAdditionalProperties: false
   flattenGlobalSecurity: true
   flatteningOrder: parameters-first
+  formStringArrayEncodeMode: encoded-string
+  forwardCompatibleEnumsByDefault: false
+  forwardCompatibleUnionsByDefault: "false"
   generateExamples: true
   imports:
     option: openapi
@@ -52,13 +65,23 @@ typescript:
       operations: models/operations
       shared: models
       webhooks: models/webhooks
+  inferUnionDiscriminators: true
   inputModelSuffix: input
   jsonpath: rfc9535
-  maxMethodParams: 0
+  laxMode: strict
+  maxMethodParams: 4
   methodArguments: infer-optional-args
+  modelPropertyCasing: camel
   moduleFormat: dual
+  multipartArrayFormat: legacy
   outputModelSuffix: output
-  packageName: rails
+  packageName: '@rails/sdk'
+  preApplyUnionDiscriminators: true
+  preserveModelFieldNames: false
   responseFormat: flat
+  sseFlatResponse: false
   templateVersion: v2
+  unionStrategy: left-to-right
+  usageSDKInitImports: []
   useIndexModules: true
+  zodVersion: v3

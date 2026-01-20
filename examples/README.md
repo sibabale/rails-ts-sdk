@@ -1,6 +1,6 @@
-# rails Examples
+# @rails/sdk Examples
 
-This directory contains example scripts demonstrating how to use the rails SDK.
+This directory contains example scripts demonstrating how to use the @rails/sdk SDK.
 
 ## Prerequisites
 

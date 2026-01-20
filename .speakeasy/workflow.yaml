@@ -1,22 +1,21 @@
 workflowVersion: 1.0.0
 speakeasyVersion: latest
 sources:
-    Rails PoC API:
+    Rails Founder API:
         inputs:
-            - location: https://raw.githubusercontent.com/sibabale/rails/main/poc/api/openapi.yaml
-       
+            - location: ./openapi-founder.yaml
         registry:
-            location: registry.speakeasyapi.dev/rails/poc/rails-po-c-api
+            location: registry.speakeasyapi.dev/rails/founder/rails-founder-api
 targets:
     rails:
         target: typescript
-        source: Rails PoC API
+        source: Rails Founder API
         publish:
             npm:
                 token: $npm_token
         codeSamples:
             registry:
-                location: registry.speakeasyapi.dev/rails/poc/rails-po-c-api-typescript-code-samples
+                location: registry.speakeasyapi.dev/rails/founder/rails-founder-api-typescript-code-samples
             labelOverride:
                 fixedValue: Typescript (SDK)
             blocking: false
