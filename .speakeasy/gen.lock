@@ -3,41 +3,41 @@ id: 668cd2a0-9bdd-4ce9-a979-88915807f9e6
 management:
   docChecksum: b753e2631d341070f6d71f426f178b3b
   docVersion: 0.1.0
-  speakeasyVersion: 1.685.0
-  generationVersion: 2.794.1
-  releaseVersion: 0.2.1
-  configChecksum: e655e005ea6c5432143683558b741529
-  repoURL: https://github.com/sibabale/rails-typescript.git
-  installationURL: https://github.com/sibabale/rails-typescript
+  speakeasyVersion: 1.708.2
+  generationVersion: 2.811.4
+  releaseVersion: 0.3.0
+  configChecksum: a10e3ea8602cb87f0989c54049b76689
+  repoURL: https://github.com/sibabale/rails-ts-sdk.git
+  installationURL: https://github.com/sibabale/rails-ts-sdk
   published: true
 persistentEdits:
-  generation_id: 55a38391-0fdf-405f-9a1b-667823d25812
-  pristine_commit_hash: 8668d4a03a2caa699dd866c2b3dfc5b05a9555d1
-  pristine_tree_hash: be552e027c53c80a01a13504b5a6d079dfcb190f
+  generation_id: ff036c8b-345a-4935-9434-e111164f33f3
+  pristine_commit_hash: c741e6b65f986ee43d7177185a47b65ea78e35f6
+  pristine_tree_hash: 087748371251d605c26fec773e398a324e51e54f
 features:
   typescript:
     additionalDependencies: 0.1.0
-    constsAndDefaults: 0.1.12
-    core: 3.26.20
+    constsAndDefaults: 0.1.13
+    core: 3.26.27
     defaultEnabledRetries: 0.1.0
     devContainers: 2.90.1
     enumUnions: 0.1.0
     envVarSecurityUsage: 0.1.2
     flattening: 2.82.1
-    globalSecurity: 2.82.14
+    globalSecurity: 2.82.15
     globalSecurityCallbacks: 0.1.0
     globalSecurityFlattening: 0.1.0
     globalServerURLs: 2.83.0
     methodArguments: 0.1.2
     nullables: 0.1.1
-    responseFormat: 0.2.3
+    responseFormat: 0.3.0
     retries: 2.83.0
     sdkHooks: 0.4.0
 trackedFiles:
   .devcontainer/README.md:
     id: b170c0f184ac
-    last_write_checksum: sha1:bc93ceb72b881aeb832b3e903d398a4077d0b0ca
-    pristine_git_object: b4b5f4e539ff0ef9ea23598853b8598fa5a5b9de
+    last_write_checksum: sha1:cbf2e9a816a526c74f68ee65046ed88380aaa8ab
+    pristine_git_object: f06ca7a89e78a7dfae8924787ed38b177340ab98
   .devcontainer/devcontainer.json:
     id: b34062a34eb1
     last_write_checksum: sha1:d0b15193202c961e7d1875864ddb15f9d17c84dd
@@ -260,12 +260,12 @@ trackedFiles:
     pristine_git_object: 67f2d1bb265501a56b02379ee2918bc9abe1ce0a
   jsr.json:
     id: 7f6ab7767282
-    last_write_checksum: sha1:c68c40dcec155798c571eb42909ac125978df3df
-    pristine_git_object: d84ac26ecf8b9a883d962b0d6a0f3ace119a3896
+    last_write_checksum: sha1:820997f1b20e6232d4f9c504c257b40e61291548
+    pristine_git_object: b6d6d718df582acc630da956d33ffcf3410f98fc
   package.json:
     id: 7030d0b2f71b
-    last_write_checksum: sha1:b956697bc393b7038b2a11436602f84b6b7838bb
-    pristine_git_object: 8fc07bbb35a72baad8934d11b3da8fe0bff058dc
+    last_write_checksum: sha1:2e95b52e997230196e670662662b57a765c2ec12
+    pristine_git_object: c606f31570b309d3cad5404cab0b9aee784fca5e
   src/core.ts:
     id: f431fdbcd144
     last_write_checksum: sha1:8f888dd0732758ce31897efe19cab1bce11801c4
@@ -336,8 +336,8 @@ trackedFiles:
     pristine_git_object: 0aebd8b0a4867e35cb3348fc52921c3c0b4725b7
   src/lib/config.ts:
     id: 320761608fb3
-    last_write_checksum: sha1:74fcc043049a331f07c4437091049d020985ca34
-    pristine_git_object: f764fc4be336160f5e93198951180f493fefc65b
+    last_write_checksum: sha1:a65785cb653aa8cbbc57133655175eeef7249174
+    pristine_git_object: 6464ccb6be4dfee34931908b0405f4c9cf2a5300
   src/lib/dlv.ts:
     id: b1988214835a
     last_write_checksum: sha1:1dd3e3fbb4550c4bf31f5ef997faff355d6f3250

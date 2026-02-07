@@ -1,6 +1,6 @@
 
 <div align="center">
-    <a href="https://codespaces.new/sibabale/rails-typescript.git/tree/main"><img src="https://github.com/codespaces/badge.svg" /></a>
+    <a href="https://codespaces.new/sibabale/rails-ts-sdk.git/tree/main"><img src="https://github.com/codespaces/badge.svg" /></a>
 </div>
 <br>
 
