@@ -16,6 +16,7 @@ generation:
     requestResponseComponentNamesFeb2024: true
     securityFeb2025: true
     sharedErrorComponentsApr2025: true
+    sharedNestedComponentsJan2026: false
   auth:
     oAuth2ClientCredentialsEnabled: false
     oAuth2PasswordEnabled: false
@@ -24,13 +25,14 @@ generation:
   schemas:
     allOfMergeStrategy: shallowMerge
   requestBodyFieldName: ""
+  versioningStrategy: automatic
   persistentEdits: {}
   tests:
     generateTests: false
     generateNewTests: true
     skipResponseBodyAssertions: false
 typescript:
-  version: 0.2.1
+  version: 0.3.0
   acceptHeaderEnum: true
   additionalDependencies:
     dependencies: {}
@@ -69,6 +71,7 @@ typescript:
   inputModelSuffix: input
   jsonpath: rfc9535
   laxMode: strict
+  legacyFileNaming: true
   maxMethodParams: 4
   methodArguments: infer-optional-args
   modelPropertyCasing: camel
