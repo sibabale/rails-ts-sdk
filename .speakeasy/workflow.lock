@@ -1,4 +1,4 @@
-speakeasyVersion: 1.685.0
+speakeasyVersion: 1.789.0
 sources:
     Rails PoC API:
         sourceNamespace: rails-po-c-api
