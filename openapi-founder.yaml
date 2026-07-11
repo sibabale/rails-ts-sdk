@@ -51,7 +51,7 @@ paths:
         - lang: bash
           label: cURL
           source: |
-            curl https://rails-client-server-staging.up.railway.app/api/v1/users \
+            curl https://www.api.railsinfra.com/api/v1/users \
               -H 'Content-Type: application/json' \
               -H 'X-API-Key: $RAILS_API_KEY' \
               -H 'X-Environment: sandbox' \
