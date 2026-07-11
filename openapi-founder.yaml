@@ -47,6 +47,20 @@ paths:
           $ref: '#/components/responses/ErrorResponse'
         '500':
           $ref: '#/components/responses/ErrorResponse'
+      x-codeSamples:
+        - lang: bash
+          label: cURL
+          source: |
+            curl https://rails-client-server-staging.up.railway.app/api/v1/users \
+              -H 'Content-Type: application/json' \
+              -H 'X-API-Key: $RAILS_API_KEY' \
+              -H 'X-Environment: sandbox' \
+              -d '{
+                "email": "dev@stainless.com",
+                "first_name": "first_name",
+                "last_name": "last_name",
+                "password": "password"
+              }'
   /api/v1/accounts:
     post:
       tags:
